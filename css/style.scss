@@ -14,6 +14,9 @@ button{
     background-color: transparent;
     border: none;
 }
+body{
+    font-family:'Proxima Nova';
+}
 .container{
     padding: 0 20px;
     max-width: 1420px;
@@ -166,3 +169,113 @@ button{
         display: none;
     }
 }
+.bg-picture{
+    // width: 100%;
+    height: 434px;
+    background-image: url(../img/photo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -177px 0;
+    @media screen and (min-width: 992px){
+        height: 676px;
+        width: 100%;
+        background-image: url(../img/photo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    }
+    .bg-picture-wh{
+        width: 1232px;
+        height: 434px; 
+    }
+}
+.bg-picture-grey{
+    position:relative;
+}
+.bg-grey{
+    position: absolute;
+    top: 400px;
+    left: 37px;
+    font-family: 'Proxima Nova';
+    height: 328px;
+    width: 388px;
+    background-color: #666A6F;
+    color: white;
+    &-item{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 22px;
+        height: 71px;
+    }
+    .bg-grey-block-text{
+        display: flex;
+        justify-content: space-around;
+        .bg-grey-text{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            max-width: 347px;
+            height: 168px;
+        }
+    }
+    .bg-grey-btn-pl{
+        display: flex;
+        align-items: center;
+        padding-left: 21px;
+        height: 90px;
+        .bg-grey-btn{
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 15px;
+            background-color: white;
+            width:180px;
+            height: 45px;
+            cursor: pointer;
+        }
+    }
+    @media screen and (min-width: 992px){
+        font-family:  'Proxima Nova';
+        height: 402px;
+        width: 716px;
+        position: absolute;
+        top: 175px;
+        left: 1100px;
+        .bg-grey-item{
+            height: 128px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .bg-grey-block-text{
+            display: flex;
+            justify-content: space-around;
+            .bg-grey-text{
+                height: 170px;
+                max-width: 610px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 28px;          
+            }
+        }
+        .bg-grey-btn-pl{
+            padding-left: 43px;
+            .bg-grey-btn{
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                width: 180px;
+                height: 52px;
+            }
+        }
+    }
+}
+
+
+
